@@ -4,7 +4,10 @@ A two-wheeled inverted pendulum robot controlled by an **Arduino Nano ESP32**. T
 
 ## 🎥 Balancing Demo
 <!-- Upload your video to GitHub and replace the link below -->
-![Robot Balancing](https://github.com/user-attachments/assets/your-video-link-here)
+### 🎥 Balancing Demo
+
+<video src="PID.mp4" autoplay loop muted playsinline style="max-width: 100%;">
+</video>
 
 ---
 
