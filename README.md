@@ -10,12 +10,21 @@ A two-wheeled inverted pendulum robot controlled by an **Arduino Nano ESP32**. T
 
 ---
 
+## Disturbance Rejection 
+
+<video src="https://github.com/user-attachments/assets/4afb7e08-c1f2-4065-b3b0-acab9b025b75" autoplay loop muted playsinline style="max-width: 100%;">
+</video>
+
+---
+
 ## 🛠 Hardware Components
 * **Microcontroller:** Arduino Nano ESP32
 * **IMU:** MPU-6050 (GY-521)
 * **Motor Driver:** TB6612FNG
+* **Motors:** TT motors (DC3V-6V)
 * **Power:** 9.6V NiMH Battery Pack
-* **Protection:** 100µF Capacitor 
+* **Protection:** 100µF Capacitor
+* **Lots** of duck tape
 
 ---
 
@@ -59,3 +68,4 @@ The robot maintains balance using a **PID (Proportional, Integral, Derivative)**
 1. **Calibration:** Place the robot on a flat surface. Upon power-up, the **Blue LED** will blink slowly while the `GY521` library takes 1000 samples to find "Zero".
 2. **Engagement:** Once the LED flashes rapidly and turns off, the `STBY` pin is pulled HIGH and the motors engage.
 3. **Safety Killswitch:** If the robot exceeds a **45° tilt**, the motors automatically shut down to prevent damage, and the Blue LED lights up.
+4. **Physical Killswitch:** A manual switch was on the top to easily cut power from the battery 
